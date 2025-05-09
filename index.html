@@ -3,88 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum - Juan Gonzalez</title>
+    <title>Ejemplo de HTML5</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="contenedor">
-        <aside class="menu-lateral">
-            <h1>Juan Gonzalez</h1>
-            <nav>
-                <ul>
-                    <li><a href="#perfil">Perfil</a></li>
-                    <li><a href="#educacion">Educación</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </aside>
+	<h1>Mi sitio web</h1>
+	<div class="contenedor">
+		<header>
+			
+			<nav>
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#seccion1">Sección 1</a></li>
+					<li><a href="#seccion2">Sección 2</a></li>
+					<li><a href="#acerca-de">Acerca de</a></li>
+				</ul>
+			</nav>
+		</header>
 
-        <main>
-            <section id="perfil">
-				<div class="perfil-container">
-					<div class="perfil-foto">
-						<!-- <img src="../imagenes/logo.jpg" alt="Foto de Juan Gonzalez"> NO ENCONTRE FOTO -->
-						<img src="../imagenes/logoPersona.jpg" alt="Foto de Juan Gonzalez">
-					</div>
-					<div class="perfil-info">
-						<h1>Juan Gonzalez</h1>
-						<h2>Perfil Profesional</h2>
-						<p>
-							Soy un estudiante de Ingeniería en Computación, actualmente cursando asignaturas como Ingeniería de Software I, Desarrollo de Aplicaciones Web y 
-							Prácticas Comunitarias.
-							Tengo 21 años y trabajo en el Municipio desde aproximadamente un ano. Lo que mas me interesa es la relacion del desarollo de software a la medicina.
-						</p>
-					</div>
-				</div>
+		<main>
+			<section id="inicio">
+				<h2>Bienvenido</h2>
+				<p>Este es un ejemplo de página web con diferentes etiquetas HTML5 y estilos CSS.</p>
 			</section>
 
-            <section id="educacion">
-                <h2>Educación</h2>
-                <ul>
-                    <li><strong>UEES</strong> – Ingeniería en Computación (en curso)</li>
-                    <li><strong>Colegio Secundario Técnico</strong> – Título Bachiller Técnico (egresado)</li>
-                </ul>
-            </section>
+			<section id="seccion1">
+				<h2>Sección 1</h2>
+				<p>Contenido de la Sección 1</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Columna 1</th>
+							<th>Columna 2</th>
+							<th>Columna 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Dato 1</td>
+							<td>Dato 2</td>
+							<td>Dato 3</td>
+						</tr>
+						<tr>
+							<td>Dato 4</td>
+							<td>Dato 5</td>
+							<td>Dato 6</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
 
-            <section id="experiencia">
-                <h2>Experiencia Laboral</h2>
-                <ul>
-                    <li><strong>Registro Civil</strong> – Asistente Administrativo (actualidad)</li>
-                    <li><strong>Proyectos académicos:</strong> desarrollo de sistemas web con HTML, CSS, JavaScript.</li>
-                </ul>
-            </section>
+			<section id="seccion2">
+				<h2>Sección 2</h2>
+				<p>Contenido de la Sección 2</p>
+				<form action="procesar.php" method="post">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" required>
 
-            <section id="habilidades">
-                <h2>Habilidades</h2>
-                <ul>
-                    <li>HTML5, CSS3, JavaScript básico</li>
-                    <li>Trabajo en equipo y comunicación</li>
-                    <li>Responsabilidad y compromiso</li>
-                </ul>
-            </section>
+					<label for="email">Correo electrónico:</label>
+					<input type="email" id="email" name="email" required>
 
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <form action="procesar.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Juan Gonzalez"required>
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
 
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email"  placeholder="juan.gonzalez@uees.edu.ec"required>
+					<button type="submit">Enviar</button>
+				</form>
+			</section>
 
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Hola me intereso tu Currículum" required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-
-            <footer>
-                <p>&copy; 2024 Juan Gonzalez - Currículum Web</p>
-            </footer>
-        </main>
-    </div>
+			<section id="acerca-de">
+				<h2>Acerca de</h2>
+				<p>Información sobre el sitio web o el autor.</p>
+				<ul>
+					<li>Elemento 1 de la lista.</li>
+					<li>Elemento 2 de la lista.</li>
+					<li>Elemento 3 de la lista.</li>
+				</ul>
+			</section>
+		</main>
+	</div>
+    <footer>
+        <p>&copy; 2024 Mi sitio web</p>
+    </footer>
 </body>
 </html>
